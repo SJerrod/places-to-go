@@ -1,3 +1,12 @@
+#show-place {
+  display: none;
+}
+
+h1 {
+  font-family: fantasy;
+  text-align: center;
+}
+
 h3 {
   font-family: serif;
   font-style: italic;
@@ -13,4 +22,8 @@ h3:hover {
 img {
   max-width: 500px;
   height: auto;
+}
+
+#submit {
+  color: white;
 }

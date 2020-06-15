@@ -12,6 +12,7 @@
 <body>
   <div class="container">
     <form id="addPlace">
+      <h1>Where have you been?</h1>
       <label for="addCity">City:</label>
         <input id="addCity" class="form-control" type="text" name="addCity" placeholder="Barcelona, etc">
       <label for="addState">State:</label>
@@ -21,15 +22,27 @@
       <label for="addLandmarks">Landmarks:</label>
         <input id="addLandmarks" class="form-control" type="text" name="addLandmarks" placeholder="The Great Pyramids, Mount Rushmore, etc">
       <label for="addFood">Popular Foods:</label>
-        <input id="addFood" class="form-control" type="number" name="addFood" placeholder="Pizza, etc">
+        <input id="addFood" class="form-control" type="text" name="addFood" placeholder="Pizza, etc">
       <label for="addPop">Population:</label>
-        <input id="addPop" class="form-control" type="text" name="addPop" placeholder="#'s only - e.g. 10530415">
+        <input id="addPop" class="form-control" type="number" name="addPop" placeholder="#'s only - e.g. 10530415">
       <label for="addLang">Languages Spoken:</label>
         <input id="addLang" class="form-control" type="text" name="addLang" placeholder="German, French, etc">
       <br>
         <input id="submit" class="btn btn-warning" type="submit" value="ADD">
     </form>
-    <h1>PLACES I HAVE BEEN</h1>
+    <h2>Cities</h2>
+    <ul id="places">
+    </ul>
+    <div id="show-place">
+      <p>City: <span class="city"></span></p>
+      <p>State: <span class="state"></span></p>
+      <p>Country: <span class="country"></span></p>
+      <p>Landmarks: <span class="landmarks"></span></p>
+      <p>Popular Foods: <span class="foods"></span></p>
+      <p>Population: <span class="population"></span></p>
+      <p>Languages: <span class="language"></span></p>
+    </div>
+    <!-- <h1>Oh the places you'll go.</h1>
       <h3 id="bos">Boston</h3>
     <img src="images/boston.jpg" alt="Photo of Boston">
       <h3 id="char">Charleston</h3>
@@ -49,6 +62,6 @@
     <h3 id="cdmx">Mexico City</h3>
       <img src="images/mexicocity.jpg" alt="Photo of Mexico City">
     <h3 id="paris">Paris</h3>
-      <img src="images/paris.jpg" alt="Photo of Paris">
+      <img src="images/paris.jpg" alt="Photo of Paris">-->
   </div>
 </body>
