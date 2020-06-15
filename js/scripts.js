@@ -57,4 +57,6 @@ let paris = new Place("Paris", "‎Île-de-France", "France", ["Eiffel Tower", "
 // user interface Logic
 $(document).ready(function() {
 event.preventDefault();
+
+
 })

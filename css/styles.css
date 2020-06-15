@@ -1,0 +1,16 @@
+h3 {
+  font-family: serif;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+h3:hover {
+  opacity: 1;
+}
+
+img {
+  max-width: 500px;
+  height: auto;
+}

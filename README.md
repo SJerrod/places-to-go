@@ -38,11 +38,9 @@ This is a list of places we have been and some little facts you may enjoy pertai
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+1. Go to the GitHub project repository
+2. Download file as a zip file to extract OR clone project using the .git URL.
+3. Navigate to folder and open index.html
 
 ## Known Bugs
 
