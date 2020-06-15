@@ -4,10 +4,22 @@ function PlacesDb() {
   this.places = []
 }
 
-PlacesDb.prototype.addPlace = function(place)
+PlacesDb.prototype.addPlace = function(place) {
   this.places.push(place);
+}
 
-function Place( city, state, country, landmarks, food, pop, lang) {
+PlacesDb.prototype.deletePlace = function(city) {
+  for (let i=0; i <= this.places.length; i++){
+    if(this.places[i]) {
+      if (this.places[i].city == city) {
+        delete this.places[i];
+      }
+    }
+  };
+  return false;
+}
+
+      function Place( city, state, country, landmarks, food, pop, lang) {
   this.city = city;
   this.state = state;
   this.country = country;
@@ -33,7 +45,7 @@ let pdx = new Place("Portland", "Oregon", "United States of America", ["Japanese
 
 let nyc = new Place("New York City", "New York", "United States of America", ["Empire State Building", "Central Park", "Natural History Museum"], "Pizza", 8336817, ["English", "Spanish", "Chinese"])
 
-let los = new Place("Los Angeles", "California", "United States of America", ["Hollywood Sign", "Griffith Observatory", "La Brea Tar Pits"], , 3990000, ["English", "Spanish", "Chinese"])
+let lax = new Place("Los Angeles", "California", "United States of America", ["Hollywood Sign", "Griffith Observatory", "La Brea Tar Pits"], "Tacos", 3990000, ["English", "Spanish", "Chinese"])
 
 let nola = new Place("New Orleans", "Louisiana", "United States of America", ["French Quarter", "Bourbon Street", "St. Louis Cathedral"], "Jambalaya", 391006, ["English", "Creole", "French"])
 
@@ -42,7 +54,7 @@ let cdmx = new Place("Mexico City", "Mexico City", "Mexico", ["Bosque de Chapult
 let paris = new Place("Paris", "‎Île-de-France", "France", ["Eiffel Tower", "Louvre Museum", "Notre Dame Cathedral"], "Baguettes", 2148271, ["French", "Arabic", "German"])
 
 
-// User interface Logic
+// user interface Logic
 $(document).ready(function() {
 event.preventDefault();
 })
